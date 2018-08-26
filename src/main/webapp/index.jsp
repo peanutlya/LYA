@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>lya</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="layer/layer.js"></script>
 </head>
@@ -31,6 +32,9 @@
 
 </script>
 <body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap前端框架</h1>
+    </div>
     <button onclick="test()">点击测试</button>
     <p></p>
 </body>
