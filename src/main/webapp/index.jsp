@@ -13,12 +13,25 @@
     <script src="layer/layer.js"></script>
 </head>
 <script>
+
     function test() {
-        layer.alert("哈哈哈");
+        $.ajax({
+            url:"${pageContext.request.contextPath}/AjaxServlet",
+            beforeSend: function(){
+                //layer.msg("hello",{time:2000});
+                alert("before");
+            },
+            success:function (data) {
+                alert("111");
+                $('p').html("linux is very much!");
+            }
+
+        })
     }
 
 </script>
 <body>
     <button onclick="test()">点击测试</button>
+    <p></p>
 </body>
 </html>
